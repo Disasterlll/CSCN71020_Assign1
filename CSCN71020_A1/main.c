@@ -3,6 +3,7 @@
 void printWelcomeMenu();
 void printOptions();
 void add();
+void subtract();
 
 
 void main() {
@@ -21,7 +22,11 @@ void main() {
 	case 1:
 		add();
 	}
-
+	switch (inputNum)
+	{
+	case 2:
+		subtract();
+	}
 }
 
 void printWelcomeMenu() {
@@ -44,4 +49,13 @@ void add() {
 	scanf_s("%lf", &num2);
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
+}
+void subtract() {
+	double num3, num4, result;
+	printf("Enter the first value:");
+	scanf_s("%lf", &num3);
+	printf("Enter the second value:");
+	scanf_s("%lf", &num4);
+	result = num3 - num4;
+	printf("%lf - %lf = %lf\n", num3, num4, result);
 }
