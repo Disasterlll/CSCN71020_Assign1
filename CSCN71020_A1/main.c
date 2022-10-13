@@ -21,11 +21,12 @@ void main() {
 	{
 	case 1:
 		add();
-	}
-	switch (inputNum)
-	{
-	case 2:
-		subtract();
+		break;
+	
+    case 2:
+    
+		 subtract();
+		 break;
 	}
 }
 
